@@ -1,0 +1,30 @@
+.container {
+
+    &__header {
+        font-size: 7.5rem;
+        letter-spacing: .75rem;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: $lato-thin;
+    }
+}
+
+.footer {
+
+    &__avg,
+    &__timer,
+    &__attempt {
+        font-size: 6.5rem;
+        color: $color-white;
+        font-weight: $lato-thin;
+        letter-spacing: .75rem;
+        line-height: 150%;
+    }
+    & span {
+        font-size: 1.5rem;
+        vertical-align: top;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-right: 2.5rem;
+    }
+}

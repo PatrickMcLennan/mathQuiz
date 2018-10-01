@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Lato';
+    font-weight: 100;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, lighten($color-blue-light, 12.5%), darken($color-blue-dark, 12.5%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & > * {
+        filter: drop-shadow(0 1.5rem .4rem rgba($color-black, .75));
+    }
+}

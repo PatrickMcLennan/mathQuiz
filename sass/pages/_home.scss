@@ -1,0 +1,82 @@
+.container {
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/////////////////////////////////// BORDERS
+.border {
+    background-color: $color-white;
+    position: absolute;
+    display: block;
+    opacity: 0;
+
+    &__top {
+        top: 0;
+        left: 10%;
+        height: 1px;
+        width: 95%;
+        animation: topBorder 2s forwards ease-out;
+    }
+    &__right {
+        top: 10%;
+        right: 0;
+        width: 1px;
+        height: 95%;
+        animation: rightBorder 2s forwards .5s ease-out;
+    }
+    &__bottom {
+        bottom: 0;
+        right: 10%;
+        height: 1px;
+        width: 95%;
+        animation: bottomBorder 2s forwards 1s ease-out;
+    }
+    &__left {
+        left: 0;
+        bottom: 10%;
+        width: 1px;
+        height: 95%;
+        animation: leftBorder 2s forwards 1.5s ease-out;
+    }
+}
+
+/////////////////////////////////// GAME
+.game {
+    height: 70%;
+    width: 70%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+
+    & > * {
+        display: grid;
+        place-items: center;
+        color: $color-white;
+        font-size: 4rem;
+        transition: all .25s;
+        margin: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: 0rem 2rem 7rem rgba($color-white, .2);
+        }
+        &:active {
+            transform: scale(.95);
+            box-shadow: 0rem .5rem .5rem rgba($color-white, .2);
+        }
+    }
+}
+/////////////////////////////////// FOOTER
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+}

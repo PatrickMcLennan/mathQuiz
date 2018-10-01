@@ -1,0 +1,42 @@
+
+///////////////////////////// BORDERS
+@keyframes topBorder {
+    0% {
+        opacity: 0;
+        left: 100%;
+    }
+    100% {
+        opacity: 1;
+        left: 10%;
+    }
+}
+@keyframes rightBorder {
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+    100% {
+        opacity: 1;
+        top: 10%;
+    }
+}
+@keyframes bottomBorder {
+    0% {
+        opacity: 0;
+        right: 100%;
+    }
+    100% {
+        opacity: 1;
+        right: 10%;
+    }
+}
+@keyframes leftBorder {
+    0% {
+        opacity: 0;
+        bottom: 100%;
+    }
+    100% {
+        opacity: 1;
+        bottom: 10%;
+    }
+}
